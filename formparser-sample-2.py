@@ -1,7 +1,7 @@
-project_id= 'ericvb-hybrid-cloud'
+project_id= '<project id>' # UPDATE THIS FIELD
+processor_id = '<processor id.' # UPDATE THIS FIELD
 location = 'us' # Format is 'us' or 'eu'
-processor_id = 'fdfc7b292ceba571' # Create processor in Cloud Console
-file_path = 'w2_sample.pdf' # The local file in your current working directory
+file_path = 'certificate-insurance.pdf' # The local file in your current working directory
 
 from google.cloud import documentai_v1beta3 as documentai
 from google.cloud import storage
