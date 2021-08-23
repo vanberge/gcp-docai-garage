@@ -1,5 +1,5 @@
 project_id= '<project id>' # UPDATE THIS FIELD
-processor_id = '<processor id.' # UPDATE THIS FIELD
+processor_id = '<processor id>' # UPDATE THIS FIELD
 location = 'us' # Format is 'us' or 'eu'
 file_path = 'certificate-insurance.pdf' # The local file in your current working directory
 
