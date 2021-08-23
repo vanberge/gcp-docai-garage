@@ -67,3 +67,4 @@ def get_text(doc_element: dict, document: dict):
         end_index = int(segment.end_index)
         response += document.text[start_index:end_index]
     return response
+    
