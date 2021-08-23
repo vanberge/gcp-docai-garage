@@ -1,4 +1,4 @@
-project_id= '<project id>' # UPDATE THIS FIELD
+project_id = '<project id>' # UPDATE THIS FIELD
 processor_id = '<processor id>' # UPDATE THIS FIELD
 location = 'us' # Format is 'us' or 'eu'
 file_path = 'certificate-insurance.pdf' # The local file in your current working directory
@@ -67,4 +67,3 @@ def get_text(doc_element: dict, document: dict):
         end_index = int(segment.end_index)
         response += document.text[start_index:end_index]
     return response
-    
