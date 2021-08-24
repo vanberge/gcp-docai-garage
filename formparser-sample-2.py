@@ -42,7 +42,7 @@ def process_document(
     for page in document_pages:
         print("Page Number:{}".format(page.page_number))
         for form_field in page.form_fields:
-            fieldName=get_text(form_field.field_name,document)
+            fieldName = get_text(form_field.field_name,document)
             nameConfidence = round(form_field.field_name.confidence,4)
             fieldValue = get_text(form_field.field_value,document)
             valueConfidence = round(form_field.field_value.confidence,4)
