@@ -33,7 +33,7 @@ def process_document(
     result = client.process_document(request=request)
 
     document = result.document
-    document_text = document.text
+    
     print("Document processing complete.")
 
     document_pages = document.pages
@@ -43,7 +43,6 @@ def process_document(
         print("Page Number:{}".format(page.page_number))
         for form_field in page.form_fields:
             fieldName = get_text(form_field.field_name,document)
-            nameConfidence = round(form_field.field_name.confidence,4)
             fieldValue = get_text(form_field.field_value,document)
             valueConfidence = round(form_field.field_value.confidence,4)
             t.add_row([fieldName, fieldValue, valueConfidence])
